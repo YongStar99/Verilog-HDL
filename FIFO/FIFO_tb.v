@@ -11,9 +11,11 @@ module FIFO_tb();
 	wire [7:0]R_data;
 	wire Empty;
 	wire Full;
+	/*
 	wire [4:0] W_Ptr;
-    wire [4:0] R_Ptr;
-	FIFO u0(clk, rst, W_en, R_en, W_data, R_data, Empty, Full, W_Ptr, R_Ptr);
+    	wire [4:0] R_Ptr;
+     	*/
+	FIFO u0(clk, rst, W_en, R_en, W_data, R_data, Empty, Full);
 	
 	initial begin
 		clk		<= 0;
