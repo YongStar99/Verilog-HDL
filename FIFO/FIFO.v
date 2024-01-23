@@ -12,16 +12,18 @@ module FIFO(
 	
 	output reg Empty,
 	output reg Full,
+	/*
 	output reg [4:0] W_Ptr,
 	output reg [4:0] R_Ptr
+ 	*/
 
 );
 	parameter FIFO_WIDTH = 8;	//8bit
 	parameter FIFO_DEPTH = 16;	//16byte
-	/*
+
 	reg [4:0] W_Ptr;
 	reg [4:0] R_Ptr;
-	*/
+
 	
 	always @(posedge clk or negedge rst) begin //Pointer cnt
 		if(rst == 1'b0) begin
