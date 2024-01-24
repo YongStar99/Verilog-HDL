@@ -7,8 +7,8 @@ module FIFO(
 	input wire W_en,
 	input wire R_en,
 	
-	input  wire [7:0]W_data,
-	output wire [7:0]R_data,
+	input  wire [7:0] W_data,
+	output wire [7:0] R_data,
 	
 	output reg Empty,
 	output reg Full
