@@ -11,7 +11,7 @@ module FIFO(
 	output wire [7:0]R_data,
 	
 	output reg Empty,
-	output reg Full,
+	output reg Full
 	/*
 	output reg [4:0] W_Ptr,
 	output reg [4:0] R_Ptr
